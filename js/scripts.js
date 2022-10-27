@@ -7,8 +7,11 @@ function validateCC(number) {
   console.log(numNoSpace);
   console.log(numNoSpace.length);
   for (i=(numNoSpace.length - 1); i >= 0; i-=2) {
-    output.push(parseInt(numNoSpace[i])*2);
-    console.log(numNoSpace[i]);
+    let doubled = parseInt(numNoSpace[i]*2);
+    if(doubled>=10) {
+      doubled = parseInt(doubled.toString()[0]) + parseInt(doubled.toString()[1]);
+    }
+    output.push(doubled);
   } 
   return output;
 }
