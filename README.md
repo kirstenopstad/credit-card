@@ -12,6 +12,13 @@
 
 ## Description
 
+### Objectives (MVP)
+* Using the inputted card number, create a new set of numbers by transforming each of the digits in the inputted credit card number.
+  * Starting on the right and moving left, double every other digit. For example the digit 3 becomes 6.
+  * If the result of the doubled digit is a double digit number, add together each digit of the double digit number. For example, the digit 7 doubled becomes 14, adding those together becomes 1 + 4, which results in 5.
+* Next, sum all of the digits in the new transformed set of numbers
+* If the resulting number ends in a zero, the card number is valid. If the number does NOT end in a zero, the card number is NOT valid. 
+
 ### Goals
 1. Meet MVP
 2. Style Nicely
